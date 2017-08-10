@@ -2,9 +2,10 @@ package main
 
 import "fmt"
 
-var i, j int = 1, 2 //one initializer per variable, type omitted
-
 func main() {
-	var c, python, java = true, false, "no!"
-	fmt.Println(i, j, c, python, java)
+	i, j := 1, 2 //short declaration must be inside func (:=)
+	k := 3
+	c, python, java := true, false, "no!"
+
+	fmt.Println(i, j, k, c, python, java)
 }
