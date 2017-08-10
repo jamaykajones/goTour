@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func add(x int, y int) int { // take 2 arguments
+func add(x, y int) int { // if arguments are the same type than all but the last can be omitted
 	return x + y
 }
 
