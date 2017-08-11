@@ -6,5 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(math.pi) //panic 'pi' not recognized
+
+	fmt.Println(math.Pi) //panic 'pi' not recognized
 }
