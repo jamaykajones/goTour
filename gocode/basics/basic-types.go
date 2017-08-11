@@ -7,7 +7,7 @@ import (
 
 var (
 	ToBe   bool       = false
-	MaxInt uint64     = 1<<64 - 1
+	MaxInt uint       = 1<<32 - 1 //anything over 32 will over flow uint
 	z      complex128 = cmplx.Sqrt(-5 + 12i)
 )
 

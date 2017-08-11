@@ -9,3 +9,5 @@ func main() {
 	var s string
 	fmt.Printf("%v %v %v %q\n", i, f, b, s)
 }
+
+//declared without value, default is zero, bool is false
