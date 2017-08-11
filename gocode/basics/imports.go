@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Printf("Now you have %g problems.", math.Sqrt(16)) // 4 problems
+	fmt.Printf("Now you have %v problems.", math.Sqrt(16)) // should get 4
 }
