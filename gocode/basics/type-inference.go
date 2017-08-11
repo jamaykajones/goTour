@@ -7,7 +7,7 @@ func main() {
 	x := 42.
 	y := "42"
 	z := 0.867 + 0.5i
-	fmt.Printf("v is of type %T\n", v)
+	fmt.Printf("v is of type %T\n", v) // %T displays type
 	fmt.Printf("x is of type %T\n", x)
 	fmt.Printf("y is of type %T\n", y)
 	fmt.Printf("z is of type %T\n", z)
