@@ -7,7 +7,7 @@ func main() {
 	for i := range pow {
 		pow[i] = 1 << uint(i) // == 2**i
 	}
-	for _, value := range pow {
+	for _, value := range pow { // drop the index or value intirely
 		fmt.Printf("%d\n", value)
 	}
 }
