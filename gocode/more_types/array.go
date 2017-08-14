@@ -10,5 +10,5 @@ func main() {
 	fmt.Println(a)
 
 	primes := [6]int{2, 3, 5, 7, 11, 13} //array named 'primes'
-	fmt.Println(primes)
+	fmt.Println(primes[1], primes[5])
 }
