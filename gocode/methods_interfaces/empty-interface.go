@@ -7,7 +7,25 @@ type I interface {
 }
 
 func main() {
-	var i I
+	var i Ipackage main
+	
+	import "fmt"
+	
+	func main() {
+		var i interface{} // empty interface
+		describe(i)
+	
+		i = 42
+		describe(i)
+	
+		i = "hello"
+		describe(i)
+	}
+	
+	func describe(i interface{}) {
+		fmt.Printf("(%v, %T)\n", i, i)
+	}
+	
 	describe(i)
 	i.M()
 }
