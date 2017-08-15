@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
+// tuple(ordered set of val) of a value and a concrete type(val, type)
 type I interface {
 	M()
 }
@@ -14,23 +14,22 @@ type T struct {
 }
 
 func (t *T) M() {
+	if t == nil {
+		fmt.Println("<nil>")
+		return
+	}
 	fmt.Println(t.S)
-}
-
-type F float64
-
-func (f F) M() {
-	fmt.Println(f)
 }
 
 func main() {
 	var i I
 
-	i = &T{"Hello"}
+	var t *T
+	i = t
 	describe(i)
 	i.M()
 
-	i = F(math.Pi)
+	i = &T{"Hello"}
 	describe(i)
 	i.M()
 }
