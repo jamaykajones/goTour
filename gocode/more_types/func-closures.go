@@ -9,7 +9,7 @@ func adder() func(int) int {
 		return sum
 	}
 }
-
+// Each closure is bound to its own sum variable. 
 func main() {
 	pos, neg := adder(), adder()
 	for i := 0; i < 10; i++ {
